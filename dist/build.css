@@ -627,10 +627,6 @@ video {
   gap: 1.25rem;
 }
 
-.gap-6 {
-  gap: 1.5rem;
-}
-
 .rounded-full {
   border-radius: 9999px;
 }
@@ -746,7 +742,7 @@ video {
 
 .picMenu {
   display: flex;
-  width: 4rem;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
