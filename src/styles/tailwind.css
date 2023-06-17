@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navBtn {
+  @apply bg-orange-400 border rounded-lg  p-1 w-10;
+}
+.listItems {
+  @apply text-gray-900 font-semibold text-lg;
+}
+.picMenu {
+  @apply flex flex-col items-center justify-center gap-3 md:gap-6 w-16 md:w-32;
+}
+.textMenu {
+  @apply text-gray-900 font-semibold text-secondMenuText;
+}
