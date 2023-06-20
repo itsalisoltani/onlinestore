@@ -9,8 +9,8 @@
   @apply text-gray-900 font-semibold text-lg;
 }
 .picMenu {
-  @apply w-full flex flex-col items-center justify-center gap-3 md:gap-6;
+  @apply w-full flex flex-col items-center justify-center gap-2 md:gap-4;
 }
 .textMenu {
-  @apply text-gray-900 font-semibold text-secondMenuText;
+  @apply text-gray-900 hover:text-orange-500 font-semibold text-secondMenuText;
 }
