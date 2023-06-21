@@ -26,3 +26,7 @@
 .swiper-slide-image {
   @apply block w-full h-full object-cover;
 }
+
+.product-slider-image {
+  @apply rounded-xl;
+}
