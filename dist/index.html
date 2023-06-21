@@ -93,19 +93,18 @@
 
     </nav>
     <!-- navbar and search box section end here and hero section start -->
-    <section >
-      <div >
-        <div class=" py-3 lg:px-0 lg:py-1 ">
-          <a href="#"> <img src="../assets/images/banners/surface.webp" alt="surface banner"></a>
-          <a href="#"> <img src="../assets/images/banners/apple watch.jpg" alt="apple watch banner"></a>
-          <a href="#"> <img src="../assets/images/banners/gaming console.webp" alt="gaming console banner"></a>
-          <a href="#"> <img src="../assets/images/banners/imac.jpg" alt="all in one apple banner"></a>
-          <a href="#"> <img src="../assets/images/banners/macbook pro.jpg" alt="macbook banner"></a>
-          <a class=" absolute top-1/2  -translate-y-1/2 p-5 cursor-pointer text-3xl duration-200 text-indigo-700 hover:text-indigo-400">&#10094</a>
-          <a class=" absolute top-1/2  -translate-y-1/2 p-5 cursor-pointer text-3xl duration-200 text-indigo-700 hover:text-indigo-400 right-0">&#10095</a>
-        </div>
-     </div>
-    </section>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><a href="#"> <img class="swiper-slide-image" src="../assets/images/banners/surface.webp" alt="surface banner"></a></div>
+        <div class="swiper-slide"><a href="#"> <img class="swiper-slide-image" src="../assets/images/banners/apple watch.jpg" alt="apple watch banner"></a></div>
+        <div class="swiper-slide"><a href="#"> <img class="swiper-slide-image" src="../assets/images/banners/gaming console.webp" alt="gaming console banner"></a></div>
+        <div class="swiper-slide"><a href="#"> <img class="swiper-slide-image" src="../assets/images/banners/imac.jpg" alt="all in one apple banner"></a></div>
+        <div class="swiper-slide"><a href="#"> <img class="swiper-slide-image" src="../assets/images/banners/macbook pro.jpg" alt="macbook banner"></a></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
   <!-- hero slider section is done  -->
 <main class=" md:px-32">
   <!-- <div class=" flex flex-col items-center justify-center"></div>  -->
@@ -141,5 +140,20 @@
 
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
   </body>
 </html>

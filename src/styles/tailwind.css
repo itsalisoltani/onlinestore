@@ -14,3 +14,15 @@
 .textMenu {
   @apply text-gray-900 hover:text-orange-500 font-semibold text-secondMenuText;
 }
+
+.swiper {
+  @apply w-full h-full;
+}
+
+.swiper-slide {
+  @apply flex justify-center items-center;
+}
+
+.swiper-slide-image {
+  @apply block w-full h-full object-cover;
+}
