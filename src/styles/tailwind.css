@@ -30,3 +30,10 @@
 .product-slider-image {
   @apply rounded-xl;
 }
+
+/* .cardSwiper {
+  @apply w-1/2 h-auto;
+} */
+.cardSwiper-slide {
+  @apply w-1/2 p-3 shadow-md rounded-2xl bg-white flex flex-col gap-2 justify-center items-center text-center;
+}
